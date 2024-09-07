@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage de Imágenes</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .collage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 37.8px; 
+        }
+        .fila {
+            display: flex;
+            justify-content: center;
+            gap: 37.8px; 
+        }
+        .fila:nth-child(2) {
+            margin-top: 37.8px; 
+        }
+        .fila img {
+            width: 275.6px; 
+            height: 225.6px; 
+            object-fit: cover;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equipo 5 - TE</h1>
+    <div class="collage">
+        <div class="fila">
+            <img src="IMG_TE1.jpg" alt="Imagen 1">
+            <img src="IMG_TE2.jpeg" alt="Imagen 2">
+            <img src="IMG_TE3.jpeg" alt="Imagen 3">
+        </div>
+        <div class="fila">
+            <img src="IMG_TE4.jpg" alt="Imagen 4">
+            <img src="IMG_TE5.jpg" alt="Imagen 5">
+        </div>
+    </div>
+</body>
+</html>
